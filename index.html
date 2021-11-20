@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="dist/css/style.css">
     <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
 </head>
-<body class="is-boxed has-animations">
+<body>
+<div id="loader">>
     <div class="body-wrap boxed-container">
         <header class="site-header text-light">
             <div class="container">
@@ -22,6 +23,7 @@
                             </a>
                         </h1>
                     </div>
+				</div>
                 </div>
             </div>
         </header>
@@ -157,6 +159,12 @@
 			</div>
         </footer>
     </div>
+	<script>
+		var preloader = document.getElementById('loader');
+		function preLoaderHandler(){
+			preloader.style.display = 'none';
+		}
+	  </script>
 
     <script src="dist/js/main.min.js"></script>
 </body>
